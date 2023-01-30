@@ -5,7 +5,7 @@
 
 При запуске программы:
 1. удаляется информация, хранящаяся в ключе `PatientName` (аномизируется файл)
-2. используя информацию в ключах StudyInstanceUID, SeriesInstanceUID, SOPInstanceUID создается новая структура хранения файлов:
+2. используя информацию в ключах `StudyInstanceUID`, `SeriesInstanceUID`, `SOPInstanceUID` создается новая структура хранения файлов:
 * на первом уровне `StudyInstanceUID`
 * на втором уровне `SeriesInstanceUID`
 * имя файла задается значением `SOPInstanceUID` с расширением `.dcm`
