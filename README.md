@@ -9,7 +9,9 @@
 * на первом уровне `StudyInstanceUID`</br>
 * на втором уровне `SeriesInstanceUID`</br>
 * имя файла задается значением `SOPInstanceUID` с расширением `.dcm`</br>
-:point_right: Таким образом, путь к каждому файлу выглядит так: `$StudyInstanceUID/$SeriesInstanceUID/$SOPInstanceUID.dcm`</br>
+Таким образом, путь к каждому файлу выглядит так:</br>
+:point_right:`$StudyInstanceUID/$SeriesInstanceUID/$SOPInstanceUID.dcm`:point_left:</br>
+
 :three: Создается файл `list_of_matching_paths.txt`, в котором имена файлов исходной структуры сопоставлены к путям (именам) файлов в конечной структуре.
 
 В случае отсутствия ключей `StudyInstanceUID` и `SeriesInstanceUID`, будут созданы следующие пути для хранения файлов: 
