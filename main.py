@@ -8,7 +8,7 @@ files_names = os.listdir('src')
 
 
 def file_processing():
-    for single_file in files_names:
+    for i, single_file in enumerate(files_names):
         file_path = f'src/{single_file}'
         ds = pydicom.dcmread(file_path, force=True)
 
@@ -20,7 +20,7 @@ def file_processing():
         # получаем нужные переменные
         study_instance_UID = ds.StudyInstanceUID if 'StudyInstanceUID' in ds else 'no_StudyInstance'
         series_instance_UID = ds.SeriesInstanceUID if 'SeriesInstanceUID' in ds else 'no_SeriesInstance'
-        sop_instance_UID = ds.SOPInstanceUID if 'SOPInstanceUID' in ds else 'no_SOPInstance'
+        sop_instance_UID = ds.SOPInstanceUID if 'SOPInstanceUID' in ds else f'no_SOPInstance_{i}'
 
         # сохраняем файл согласно следующей структуры:
         # $StudyInstanceUID/$SeriesInstanceUID/$SOPInstanceUID.dcm
