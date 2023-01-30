@@ -12,9 +12,9 @@
 Таким образом, путь к каждому файлу выглядит так:</br>
 :point_right:`$StudyInstanceUID/$SeriesInstanceUID/$SOPInstanceUID.dcm`:point_left:</br>
 
-:three: Создается файл `list_of_matching_paths.txt`, в котором имена файлов исходной структуры сопоставлены к путям (именам) файлов в конечной структуре.
+:three: Создается файл `list_of_matching_paths.txt`, в котором имена файлов исходной структуры сопоставлены к путям (именам) файлов в конечной структуре.</br>
 
-В случае отсутствия ключей `StudyInstanceUID` и `SeriesInstanceUID`, будут созданы следующие пути для хранения файлов: 
-`no_StudyInstance` и `no_SeriesInstance` соответственно.
+:heavy_exclamation_mark: В случае отсутствия ключей `StudyInstanceUID` и `SeriesInstanceUID`,</br>
+будут созданы следующие пути для хранения файлов: `no_StudyInstance` и `no_SeriesInstance` соответственно.</br>
 
-В случае отсутствия ключа `SOPInstanceUID`, файлу будет присвоено имя `no_SOPInstance_i`, где `i` - это порядковый номер файла.
+:heavy_exclamation_mark: В случае отсутствия ключа `SOPInstanceUID`, файлу будет присвоено имя `no_SOPInstance_i`, где `i` - это порядковый номер файла.
