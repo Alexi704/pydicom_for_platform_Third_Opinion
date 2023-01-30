@@ -2,7 +2,6 @@
 
 import os
 import pydicom
-from pydicom.tag import Tag
 
 # получаем список всех исходных файлов
 files_names = os.listdir('src')
