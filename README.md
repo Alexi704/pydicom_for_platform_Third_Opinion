@@ -18,4 +18,4 @@
 В случае отсутствия ключей `StudyInstanceUID` и `SeriesInstanceUID`, будут созданы следующие пути для хранения файлов: 
 `no_StudyInstance` и `no_SeriesInstance` соответственно.
 
-В случае отсутствия ключа `SOPInstanceUID`, имени файла будет присвоено имя `no_SOPInstance_i`, где `i` - это порядковый номер файла.
+В случае отсутствия ключа `SOPInstanceUID`, файлу будет присвоено имя `no_SOPInstance_i`, где `i` - это порядковый номер файла.
